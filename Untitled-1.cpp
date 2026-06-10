@@ -17,7 +17,7 @@ public:
     Student(string n, string cnic, int a, string con)
         : Person(n, cnic, a, con) {}
     void displayInfo() override {
-        cout << "Name: " << name << endl;
+        cout << "Name: " << name << endl;  
         cout << "CNIC: " << CNIC << endl;
         cout << "Age: " << age << endl;
         cout << "Contact: " << contact << endl;

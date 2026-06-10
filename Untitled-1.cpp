@@ -1,29 +1,21 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-// Abstract Base Class
 class Person {
 protected:
     string name;
     string CNIC;
     int age;
     string contact;
-
 public:
     Person(string n, string cnic, int a, string con)
         : name(n), CNIC(cnic), age(a), contact(con) {}
-
-    // Pure Virtual Function
     virtual void displayInfo() = 0;
 };
-
-// Derived Class
 class Student : public Person {
 public:
     Student(string n, string cnic, int a, string con)
         : Person(n, cnic, a, con) {}
-
     void displayInfo() override {
         cout << "Name: " << name << endl;
         cout << "CNIC: " << CNIC << endl;
@@ -31,11 +23,8 @@ public:
         cout << "Contact: " << contact << endl;
     }
 };
-
 int main() {
     Student s("Ali", "42101-1234567-1", 20, "03001234567");
-
     s.displayInfo();
-
     return 0;
 }

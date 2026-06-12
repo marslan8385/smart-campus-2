@@ -10,7 +10,7 @@ protected:
 public:
     Person(string n, string cnic, int a, string con)
         : name(n), CNIC(cnic), age(a), contact(con) {}
-    virtual void displayInfo() = 0; // Pure Virtual Function
+    virtual void displayInfo() = 0; 
 };
 class Staff : public Person {
 private:
@@ -37,7 +37,7 @@ public:
 };
 int main() {
     Staff s("Ali Raza", "42101-1234567-1", 30,
-            "03001234567", 1001, "Lab Assistant", 45000);
+            "03001678637", 1001, "Lab Assistant", 45000);
     s.displayInfo();
     return 0;
 }

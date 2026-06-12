@@ -120,7 +120,7 @@ int main() {
     catalog[0] = new Book(
         101,
         "C++ Programming",
-        "Bjarne Stroustrup",
+        "Ahmed Ali",
         2020,
         "978-12345",
         "Programming",
@@ -129,7 +129,7 @@ int main() {
     catalog[1] = new Book(
         102,
         "Data Structures",
-        "Mark Allen",
+        "Farhan ",
         2019,
         "978-67890",
         "Computer Science",

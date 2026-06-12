@@ -10,7 +10,7 @@ protected:
 public:
     Person(string n, string cnic, int a, string con)
         : name(n), CNIC(cnic), age(a), contact(con) {}
-    virtual void displayInfo() = 0; // Pure Virtual Function
+    virtual void displayInfo() = 0; 
 };
 class Student : public Person {
 private:
@@ -57,7 +57,7 @@ public:
 int main() {
     string courses[3] = {"OOP", "DSA", "Database"};
 
-    Student s("Ali", "42101-1234567-1", 20, "03001234567",
+    Student s("Arslan", "37105-1234567-1", 20, "03001234567",
               101, 4, 3.5, courses);
     s.displayInfo();
     cout << "Grade: " << s.calculateGrade() << endl;

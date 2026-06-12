@@ -24,7 +24,7 @@ public:
     }
 };
 int main() {
-    Student s("Ali", "42101-1234567-1", 20, "03001234567");
+    Student s("Arslan", "37105-2931234-9", 20, "03001234567");
     s.displayInfo();
     return 0;
 }

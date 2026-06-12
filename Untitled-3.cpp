@@ -10,7 +10,7 @@ protected:
 public:
     Person(string n, string cnic, int a, string con)
         : name(n), CNIC(cnic), age(a), contact(con) {}
-    virtual void displayInfo() = 0; // Pure Virtual Function
+    virtual void displayInfo() = 0; 
 };
 class Faculty : public Person {
 private:
@@ -46,7 +46,7 @@ public:
 };
 int main() {
     string courses[3] = {"OOP", "Database", "Data Structures"};
-    Faculty f("Ahmed Khan", "42101-1234567-1", 35, "03001234567",
+    Faculty f("Ahmed Khan",37406-1234567-1", 35, "03001234567",
               5001, "Computer Science", "Assistant Professor", courses);
     f.displayInfo();
     return 0;
